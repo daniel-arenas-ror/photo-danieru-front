@@ -3,7 +3,8 @@ import Layout from "../../Components/Layout"
 function Home() {
   return (
     <Layout>
-      Home
+      <h1 className="text-3xl font-bold underline text-center">Home!</h1>
+      <p>Home</p>
     </Layout>
   )
 }
