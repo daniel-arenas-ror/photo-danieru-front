@@ -18,25 +18,16 @@ function CheckoutSideMenu() {
       </div>
       <div className='px-6 overflow-y-scroll flex-1'>
         {
-          context.cartProducts.map(product => (
-            <OrderCard
-              key={product.id}
-              id={product.id}
-              title={product.title}
-              imageUrl={product.images}
-              price={product.price}
-              handleDelete={handleDelete}
-            />
-          ))
+
         }
       </div>
       <div className='px-6 mb-6'>
         <p className='flex justify-between items-center mb-2'>
           <span className='font-light'>Total:</span>
-          <span className='font-medium text-2xl'>${totalPrice(context.cartProducts)}</span>
+          <span className='font-medium text-2xl'>$ 0 </span>
         </p>
         <Link to='/my-orders/last'>
-          <button className='bg-black py-3 text-white w-full rounded-lg' onClick={() => handleCheckout()}>Checkout</button>
+          <button className='bg-black py-3 text-white w-full rounded-lg'>Checkout</button>
         </Link>
       </div>
     </aside>
