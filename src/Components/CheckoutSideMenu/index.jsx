@@ -1,5 +1,6 @@
 import { useContext } from 'react'
 import { ShoppingCartContext } from '../../Context'
+import { XMarkIcon } from '@heroicons/react/24/solid'
 import './styles.css'
 
 function CheckoutSideMenu() {
@@ -26,9 +27,9 @@ function CheckoutSideMenu() {
           <span className='font-light'>Total:</span>
           <span className='font-medium text-2xl'>$ 0 </span>
         </p>
-        <Link to='/my-orders/last'>
+        <a to='/my-orders/last'>
           <button className='bg-black py-3 text-white w-full rounded-lg'>Checkout</button>
-        </Link>
+        </a>
       </div>
     </aside>
   )

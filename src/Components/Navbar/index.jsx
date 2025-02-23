@@ -1,4 +1,5 @@
 import { NavLink } from "react-router";
+import ShoppingCart from '../ShoppingCart'
 
 const Navbar = () => {
   return (
@@ -13,6 +14,11 @@ const Navbar = () => {
           <NavLink to='/about'>
             About
           </NavLink>
+        </li>
+      </ul>
+      <ul className='flex items-center gap-3'>
+        <li className='flex items-center'>
+          <ShoppingCart />
         </li>
       </ul>
     </nav>
