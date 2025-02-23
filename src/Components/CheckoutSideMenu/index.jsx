@@ -3,6 +3,8 @@ import { ShoppingCartContext } from '../../Context'
 import './styles.css'
 
 function CheckoutSideMenu() {
+  const context = useContext(ShoppingCartContext)
+
   return (
     <aside
       className={`${context.isCheckoutSideMenuOpen ? 'flex' : 'hidden'} checkout-side-menu flex-col fixed right-0 border border-black rounded-lg bg-white`}>
