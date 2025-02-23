@@ -6,8 +6,7 @@ function ShoppingCart() {
   const context = useContext(ShoppingCartContext)
 
   const openCheckoutSideMenu = () => {
-    context.openCheckout()
-    context.closeProductDetail()
+    context.openCheckoutSideMenu()
   }
 
   return (
